@@ -411,3 +411,100 @@ Processing by HomesController#index as HTML
 Completed 200 OK in 34ms (Views: 33.0ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 183.96.253.110 at 2019-07-01 17:57:55 +0000
+Cannot render console from 183.96.253.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/ubuntu/.rvm/gems/ruby-2.6.3/gems/activerecord-5.2.3/lib/active_record/log_subscriber.rb:98
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 194ms (Views: 187.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 183.96.253.110 at 2019-07-01 17:57:58 +0000
+Cannot render console from 183.96.253.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 13.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/homes/read" for 183.96.253.110 at 2019-07-01 17:58:03 +0000
+Cannot render console from 183.96.253.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#read as HTML
+  Rendering homes/read.html.erb within layouts/application
+  [1m[36mPost Load (0.2ms)[0m  [1m[34mSELECT "posts".* FROM "posts"[0m
+  ↳ app/views/homes/read.html.erb:4
+  Rendered homes/read.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 22ms (Views: 18.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/homes/second?form_title=&form_content=&form_numb=" for 183.96.253.110 at 2019-07-01 17:58:06 +0000
+Cannot render console from 183.96.253.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#second as HTML
+  Parameters: {"form_title"=>"", "form_content"=>"", "form_numb"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/homes_controller.rb:14
+  [1m[36mPost Create (0.3ms)[0m  [1m[32mINSERT INTO "posts" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2019-07-01 17:58:06.644071"], ["updated_at", "2019-07-01 17:58:06.644071"]]
+  ↳ app/controllers/homes_controller.rb:14
+  [1m[35m (11.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/homes_controller.rb:14
+Redirected to https://5be74d0317c6483997ebb5e3aabc5554.vfs.cloud9.us-east-2.amazonaws.com/homes/index
+Completed 302 Found in 19ms (ActiveRecord: 12.2ms)
+
+
+Started GET "/homes/index" for 183.96.253.110 at 2019-07-01 17:58:06 +0000
+Cannot render console from 183.96.253.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 13ms (Views: 11.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/homes/second?form_title=&form_content=&form_numb=" for 183.96.253.110 at 2019-07-01 17:58:10 +0000
+Cannot render console from 183.96.253.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#second as HTML
+  Parameters: {"form_title"=>"", "form_content"=>"", "form_numb"=>""}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/homes_controller.rb:14
+  [1m[36mPost Create (0.2ms)[0m  [1m[32mINSERT INTO "posts" ("created_at", "updated_at") VALUES (?, ?)[0m  [["created_at", "2019-07-01 17:58:10.605990"], ["updated_at", "2019-07-01 17:58:10.605990"]]
+  ↳ app/controllers/homes_controller.rb:14
+  [1m[35m (11.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/homes_controller.rb:14
+Redirected to https://5be74d0317c6483997ebb5e3aabc5554.vfs.cloud9.us-east-2.amazonaws.com/homes/index
+Completed 302 Found in 18ms (ActiveRecord: 11.9ms)
+
+
+Started GET "/homes/index" for 183.96.253.110 at 2019-07-01 17:58:10 +0000
+Cannot render console from 183.96.253.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 12ms (Views: 11.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/homes/index" for 183.96.253.110 at 2019-07-01 17:59:10 +0000
+Cannot render console from 183.96.253.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 34ms (Views: 32.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/homes/second?form_title=&form_content=&form_numb=" for 183.96.253.110 at 2019-07-01 17:59:12 +0000
+Cannot render console from 183.96.253.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#second as HTML
+  Parameters: {"form_title"=>"", "form_content"=>"", "form_numb"=>""}
+  Rendering homes/second.html.erb within layouts/application
+  Rendered homes/second.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 20ms (Views: 11.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/homes/index" for 183.96.253.110 at 2019-07-01 17:59:41 +0000
+Cannot render console from 183.96.253.110! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by HomesController#index as HTML
+  Rendering homes/index.html.erb within layouts/application
+  Rendered homes/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 13ms (Views: 11.8ms | ActiveRecord: 0.0ms)
+
+
